@@ -11,6 +11,10 @@ def description(soup):
     silver = int(soup.find('li', class_='silver').text)
     bronze = int(soup.find('li', class_='bronze').text)
     games = (soup.find('span', class_='stat grow').text)[:-12]
+    avatar = str(soup.find('div', class_='avatar').find('img')).replace('''<img src="''', '').replace('''">\n</img>''', '')
+
+
+    print(avatar)
 
     data = {
         'name': name,
@@ -20,7 +24,8 @@ def description(soup):
         'gold': gold,
         'silver': silver,
         'bronze': bronze,
-        'games': games
+        'games': games,
+        'avatar': avatar
     }
     return data
 
