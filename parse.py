@@ -37,5 +37,3 @@ def main(nickname):
             return data
     except:
         return 'Error'
-
-print(main('x-OCCUPANT-x'))
