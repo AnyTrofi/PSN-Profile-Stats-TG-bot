@@ -1,7 +1,7 @@
 import telebot
 from parse import main
 
-token = '5751633149:AAG1Fi6EXla4Im6ldvpVaVmcd6ngIoY1Bpg'
+token = 'your telegram bot token'
 bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
