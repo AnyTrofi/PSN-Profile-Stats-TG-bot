@@ -32,7 +32,7 @@ def description(soup):
 def main(nickname):
     try:
         requests.get(("https://psnprofiles.com/xhr/update/status?user=" + nickname))
-        time.sleep(1)
+        time.sleep(3)
         html = requests.get(("https://psnprofiles.com/" + nickname))
         if html.status_code == 200:
             soup = BeautifulSoup(html.text, 'html.parser')
