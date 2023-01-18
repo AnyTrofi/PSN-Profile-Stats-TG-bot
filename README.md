@@ -2,4 +2,4 @@
 
 To start: run 'TG_Bot.py'
 
-This solution not warking in Russia region
+This solution not working in Russia region
